@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;    
     public float forwardForce = 1000f;
     public float sideForce = 1000f;
-    public float upForce = 1500f;
+    public float upForce = 5f;
     void Start()
     {
        
@@ -31,9 +31,9 @@ public class PlayerMovement : MonoBehaviour
         {
              rb.AddForce(-sideForce* Time.deltaTime,0,0);
         }
-         if(Input.GetKey("e"))
+         if(Input.GetKeyDown(KeyCode.Space))
         {
-             rb.AddForce(0,upForce* Time.deltaTime,0);
+             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.Impulse);
         }
     }
 }
