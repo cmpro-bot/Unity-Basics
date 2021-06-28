@@ -9,7 +9,9 @@ public class PlayerCollision : MonoBehaviour
    {
        if(collisionInfo.collider.tag== "Obstacle")
        {
-           movement.enabled=false;
+           movement.upForce = 0.0f;
+           movement.forwardForce= 0.0f;
+           movement.sideForce= 0.0f;
        }
    }
 }
