@@ -6,6 +6,11 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
     public float restartdelay=1f;
+    public GameObject completeLevelUI;
+    public void completeLevel()
+    {
+        completeLevelUI.SetActive(true);
+    }
     public void endGame()
     {
         if(gameHasEnded==false)
@@ -21,4 +26,3 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
-
