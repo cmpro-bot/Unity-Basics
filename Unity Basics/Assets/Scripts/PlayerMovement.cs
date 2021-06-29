@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
      public float sideForce = 1000f;
      public float upForce = 5f;
      Vector3 e;
+     public Transform player;
      void Start()
      {
           e = new Vector3(0.0f,1.0f,0.0f);   
@@ -33,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
      }
          if(Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = e* upForce;
+            if (player.position.y<=1.2f)
+            {
+                rb.velocity = e* upForce;
+            }
+            
     }
 }}
