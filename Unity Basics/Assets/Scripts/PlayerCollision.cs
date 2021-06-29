@@ -12,6 +12,7 @@ public class PlayerCollision : MonoBehaviour
            movement.upForce = 0.0f;
            movement.forwardForce= 0.0f;
            movement.sideForce= 0.0f;
+           FindObjectOfType<GameManager>().endGame();
        }
    }
 }

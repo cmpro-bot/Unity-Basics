@@ -40,4 +40,8 @@ public class PlayerMovement : MonoBehaviour
             }
             
     }
+        if(player.position.y<0.5f)
+        {
+            FindObjectOfType<GameManager>().endGame();
+        }
 }}
