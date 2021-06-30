@@ -311,6 +311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bbedbf74c8a2aa46901d5c22465739e, type: 3}
+--- !u!1 &577912310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 489893615940566008, guid: 237db9bb556fc7444927bd62ad3f4f66, type: 3}
+  m_PrefabInstance: {fileID: 1807174682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1231,7 @@ PrefabInstance:
     - target: {fileID: 489893614190006226, guid: 237db9bb556fc7444927bd62ad3f4f66, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1650819515}
     - target: {fileID: 489893615734702836, guid: 237db9bb556fc7444927bd62ad3f4f66, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1469,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartdelay: 1
-  completeLevelUI: {fileID: 0}
+  completeLevelUI: {fileID: 577912310}
 --- !u!4 &1975660612
 Transform:
   m_ObjectHideFlags: 0
