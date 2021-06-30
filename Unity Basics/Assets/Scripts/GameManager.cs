@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public void completeLevel()
     {
+        Debug.Log("level won");
         completeLevelUI.SetActive(true);
     }
     public void endGame()

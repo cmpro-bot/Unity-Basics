@@ -5,12 +5,12 @@ public class endtrigger : MonoBehaviour
 {
     public GameManager gameManager;
 
-    void onTriggerEnter(Collider other)
+     void OnTriggerEnter()
     {
-        if(other.CompareTag("Player"))
-        {
+        
         Debug.Log("win");
         gameManager.completeLevel();
-        }
+     
     }
+    
 }
